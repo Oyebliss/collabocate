@@ -1,0 +1,12 @@
+.bb-button {
+  display: block;
+  background: #025aa7;
+  color: white;
+  border-radius: 4px;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bb-button:hover {
+  background: #ad4343;
+}

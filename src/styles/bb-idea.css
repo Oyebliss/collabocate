@@ -1,0 +1,17 @@
+/* ---------------------------------------------------------------- */
+/* -- This part is not to be directly added to code as done here -- */
+/* -- Use SCSS functions for this part ---------------------------- */
+/* ---------------------------------------------------------------- */
+.bb-pos-fixed { /* pos = position */
+  position: fixed;
+}
+
+.bb-pos-r30-b30 { /* pos = position, r = right, b = bottom */
+  bottom: 30px;
+  right: 30px;
+}
+
+.bb-pad-s15-tb30 { /* pad = padding, s = side, tb = top & bottom */
+  padding: 15px 30px;
+}
+/* ---------------------------------------------------------------- */
