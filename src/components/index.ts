@@ -1,1 +1,1 @@
-export * from './GithubSync';
+export * from './Collabocate';

@@ -1,17 +1,11 @@
 /* ---------------------------------------------------------------- */
-/* -- This part is not to be directly added to code as done here -- */
+/* -- Specify the position dimensions in your app's code ---------- */
 /* -- Use SCSS functions for this part ---------------------------- */
 /* ---------------------------------------------------------------- */
-.bb-pos-fixed { /* pos = position */
-  position: fixed;
-}
 
-.bb-pos-r30-b30 { /* pos = position, r = right, b = bottom */
-  bottom: 30px;
+.bb-pos-r30-b20 { /* pos = position, r = right, b = bottom */
+  bottom: 20px;
   right: 30px;
 }
 
-.bb-pad-s15-tb30 { /* pad = padding, s = side, tb = top & bottom */
-  padding: 15px 30px;
-}
 /* ---------------------------------------------------------------- */
