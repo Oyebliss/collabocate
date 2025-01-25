@@ -1,0 +1,11 @@
+/* ------------------------------------------------------------------------ */
+/* -- Add to container or element that you want a different display for -- */
+/* ------------------------------------------------------------------------ */
+.bb-disp-flex {/* disp = display */
+  display: flex;
+}
+
+.bb-disp-inline-flex {/* disp = display */
+  display: inline-flex;
+}
+/* ---------------------------------------------------------------- */

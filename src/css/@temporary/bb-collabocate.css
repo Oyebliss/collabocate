@@ -1,0 +1,88 @@
+
+.bb-collabocate_container {
+  /* ----- Add the display direct to Container component later */
+  display: flex;
+  flex-direction: column;
+  /* ----- */
+  font-family: 'Open Sans', sans-serif;
+  /* ----- */
+  /* never apply color to an overall container?  */
+  /* never apply right and left margins to an overall container? */
+}
+
+/* ----- */
+.bb-debugger {
+  /* ----- dynamic dimensions? */
+  background: #ad4343;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+/* ----- */
+
+.bb-floating-controls {
+  /* ----- dynamic dimensions? */
+  align-self: end;
+  /* align-items: center; */
+  background: white;
+  box-shadow: 0 0 30px 5px #e5e5e5; /* border: 1px solid black; */
+  border-radius: 40px;
+  /* ----- dynamic spacing? */
+  padding: 8px;
+  margin-top: 16px;
+  /* ----- To be adjusted later */
+  gap: 16px;
+}
+
+.bb-floating-controls_toggle_button {
+  /* ----- dynamic dimensions? */
+  border: 1px solid black;
+  border-radius: 50%;
+  /* ----- dynamic spacing? */
+  padding: 8px;
+  /* ----- To be removed once image is used */
+  height: calc(58px + 8px);
+  width: calc(58px + 8px);
+}
+
+.bb-floating-controls_tab_button_container {
+  /* ----- dynamic dimensions? */
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 40px;
+  /* ----- dynamic spacing? */
+  padding: 8px;
+  /* ----- To be removed once image is used */
+  /* height: 58px; */
+  /* ----- To be adjusted later */
+  gap: 8px;
+}
+
+.bb-floating-controls_tab_button {
+  /* ----- dynamic dimensions? */
+  border: 1px solid black;
+  border-radius: 50%;
+  /* ----- dynamic spacing? */
+  padding: 8px;
+  /* ----- To be removed once image is used */
+  height: calc(58px - 10px);
+  width: calc(58px - 10px);
+}
+
+/* ----- */
+
+.bb-button {
+  /* ----- dynamic dimensions? */
+  display: block;
+  background: #025aa7;
+  color: white;
+  border-radius: 4px;
+  font-size: 1.2em;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+.bb-button:hover {
+  background: #ad4343;
+}
+
+
