@@ -1,4 +1,5 @@
 import React from 'react';
+import { Dropdown } from '../@helpers/Dropdown';
 
 export interface ModalPopupProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {}
 
@@ -21,9 +22,7 @@ export const ModalPopup: React.FunctionComponent<ModalPopupProps> = (props: Moda
           <div>
             <label className="bb-collabocate_label" htmlFor="issueTemplates">Choose Report Type</label>
             <br />
-            <select className="bb-content-group__collabocate_form-inner bb-collabocate_input" name="issue_templates" id="issueTemplates">
-              <option value=""> -- Select issue template -- </option>
-            </select>
+            <Dropdown />
           </div>
           <div>
             <label className="bb-collabocate_label" htmlFor="issueTitle">Issue Title</label>
