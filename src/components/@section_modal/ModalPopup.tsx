@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dropdown } from '../@helpers/Dropdown';
+import { Dropdown } from '../@helpers/dropdown/Dropdown';
 
 export interface ModalPopupProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {}
 
