@@ -8,7 +8,7 @@ import { useDropdown } from './useDropdown';
 export interface DropdownProps {}
 
 export const Dropdown: React.FunctionComponent<DropdownProps> = ({}) => {
-  const {toggle, setToggle, dropdownContainerRef } = useDropdown();
+  const {isOpen, setIsOpen, dropdownContainerRef } = useDropdown();
 
   return (
     <>
@@ -21,11 +21,11 @@ export const Dropdown: React.FunctionComponent<DropdownProps> = ({}) => {
         <button 
           className="bb-content-group_toggle bb-toggle"
           type="button"
-          onClick={() => setToggle(!toggle)}
+          onClick={() => setIsOpen(!isOpen)}
         >
           -- Select issue template --
         </button>
-        {toggle && (
+        {isOpen && (
           <Container 
             bb_function={'position'}
             bb_function_class={'bb-pos-absolute'}
