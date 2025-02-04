@@ -4,4 +4,12 @@
 .bb-pos-fixed {/* pos = position */
   position: fixed;
 }
+
+.bb-pos-relative {
+  position: relative;
+}
+
+.bb-pos-absolute {
+  position: absolute;
+}
 /* ---------------------------------------------------------------- */

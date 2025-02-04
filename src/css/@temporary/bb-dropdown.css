@@ -1,0 +1,25 @@
+.bb-content-group_toggle {
+    width: 100%;
+    font-size: 0.81em;
+    padding: 14px 0;
+    background: white;
+}
+
+.bb-toggle {
+    border: 0.3px solid #C1CDD7;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.bb-toggle_option-container {
+    width: 100%;
+    border: 0.3px solid #C1CDD7;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px 5px #e5e5e5;
+}
+
+.bb-toggle_hr {
+    border-top: 0.3px solid #C1CDD7;
+}

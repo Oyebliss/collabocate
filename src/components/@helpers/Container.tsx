@@ -1,16 +1,17 @@
-import React, { ReactNode } from 'react';
+import React, { forwardRef, LegacyRef, ReactNode } from 'react';
 import { Debugger } from './Debugger';
 
 // TODO: Decide later - should this file/functionality be moved to the external library?
 
-export interface ContainerProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
+export interface ContainerProps {
   children: ReactNode;
   bb_function: 'position' | 'display';
   bb_function_class: string;
   bb_class: string;
+  ref?: LegacyRef<HTMLDivElement> | undefined;
 }
 
-export const Container: React.FunctionComponent<ContainerProps> = ({ children, bb_function, bb_function_class, bb_class }) => {
+export const Container: React.FunctionComponent<ContainerProps> = forwardRef(({ children, bb_function, bb_function_class, bb_class }, ref) => {
   // TODO: Fix debugger logic, component, message etc. Make it better reusable.
   // TODO: Fix debugger - prevent e.g. 'bb-pos-' from being used in bb_class. We only want to use that kind of prefix in bb_function_class.
   if (bb_function === 'position' && !bb_function_class.includes('bb-pos-')) {
@@ -26,7 +27,7 @@ export const Container: React.FunctionComponent<ContainerProps> = ({ children, b
   }
   return (
     <>
-      <div className={`${bb_function_class} ${bb_class}`}>{children}</div>
+      <div ref={ref} className={`${bb_function_class} ${bb_class}`}>{children}</div>
     </>
   );
-};
+});
